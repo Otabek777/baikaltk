@@ -80,6 +80,12 @@ ul, ol {
   line-height: 23px;
   color: #FFFFFF;
   margin-bottom: 11px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header__phone:hover {
+  color: #FE7715;
 }
 
 .header__email {
@@ -88,6 +94,16 @@ ul, ol {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header__email:hover {
+  color: #FE7715;
+}
+
+.main {
+  overflow: hidden;
 }
 
 .banner {
@@ -95,6 +111,37 @@ ul, ol {
   background: url(../img/bg-color.png) no-repeat top/cover;
   position: relative;
   overflow: hidden;
+  position: relative;
+}
+.banner .cloud {
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  z-index: 3;
+  width: 346px;
+}
+.banner .cloud2 {
+  position: absolute;
+  top: 122px;
+  right: -100px;
+  z-index: 3;
+  width: 300px;
+}
+.banner .cloud3 {
+  position: absolute;
+  top: 500px;
+  right: 150px;
+  z-index: 3;
+  width: 250px;
+  opacity: 0.9;
+}
+.banner .cloud4 {
+  position: absolute;
+  top: 600px;
+  left: 100px;
+  z-index: 3;
+  width: 200px;
+  opacity: 0.8;
 }
 
 .banner__block {
@@ -361,6 +408,11 @@ ul, ol {
   font-size: 18px;
   line-height: 150%;
   color: #032146;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.form_message__wrap .input input:focus {
+  border-color: #165FBA;
 }
 .form_message__wrap .input input::-webkit-input-placeholder {
   color: #ACACAC;
@@ -391,6 +443,8 @@ ul, ol {
   font-size: 18px;
   line-height: 150%;
   color: #032146;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .form_message__wrap .textarea::-webkit-input-placeholder {
   color: #ACACAC;
@@ -406,6 +460,9 @@ ul, ol {
 }
 .form_message__wrap .textarea::placeholder {
   color: #ACACAC;
+}
+.form_message__wrap .textarea:focus {
+  border-color: #165FBA;
 }
 .form_message__wrap .btn {
   display: -webkit-box;
@@ -428,6 +485,14 @@ ul, ol {
   background: #165FBA;
   border-radius: 4px;
   border: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.form_message__wrap .btn:hover {
+  background: #0e4180;
+}
+.form_message__wrap .btn:active {
+  background: #032146;
 }
 .form_message__wrap .text {
   max-width: 350px;
@@ -440,6 +505,9 @@ ul, ol {
 }
 .form_message__wrap .text a {
   color: #165FBA;
+}
+.form_message__wrap .text a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -486,6 +554,12 @@ ul, ol {
   line-height: 28px;
   color: #FFFFFF;
   margin-right: 45px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer__phone:hover {
+  color: #FE7715;
 }
 
 .footer__email {
@@ -493,6 +567,12 @@ ul, ol {
   font-size: 22px;
   line-height: 28px;
   color: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer__email:hover {
+  color: #FE7715;
 }
 
 .footer__bottom {
@@ -552,6 +632,22 @@ ul, ol {
 }
 
 @media screen and (max-width: 768px) {
+  .banner .cloud {
+    display: none;
+  }
+  .banner .cloud4 {
+    display: none;
+  }
+  .banner .cloud2 {
+    width: 200px;
+    top: 100px;
+    right: -80px;
+  }
+  .banner .cloud3 {
+    width: 150px;
+    top: 430px;
+    left: -20px;
+  }
   .container {
     padding: 0 20px;
   }

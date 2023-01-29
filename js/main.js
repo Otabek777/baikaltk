@@ -1,3 +1,22 @@
+$(window).scroll(function() {
+    let st = $(this).scrollTop();
+
+    $(".banner .cloud").css({
+        "transform" : "translate(0px, " + st/5 + "px"
+    });
+    $(".banner .cloud2").css({
+        "transform" : "translate(0px, " + st/15 + "px"
+    });
+    $(".banner .cloud3").css({
+        "transform" : "translate(0px, " + st/15 + "px"
+    });
+    $(".banner .cloud4").css({
+        "transform" : "translate(0px, " + st/25 + "px"
+    });
+    $(".banner__train").css({
+        "transform" : "translate(0px, -" + st/25 + "px"
+    });
+});
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
         [].forEach.call( document.querySelectorAll('.tel'), function(input) {
@@ -33,6 +52,5 @@ if(document.querySelector('.input_phone')) {
         input.addEventListener("keydown", mask, false)
     
       });
-    
     });
 };
