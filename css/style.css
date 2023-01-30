@@ -337,6 +337,14 @@ ul, ol {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.map__wrap .new_chara {
+  position: absolute;
+  color: #032146;
+  top: 143px;
+  left: 465px;
+  font-weight: 400;
+  font-size: 21px;
+}
 
 .map__img {
   width: 100%;
