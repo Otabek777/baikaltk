@@ -339,10 +339,10 @@ ul, ol {
 }
 .map__wrap .new_chara {
   position: absolute;
-  color: #032146;
+  color: #FFFFFF;
   top: 143px;
   left: 465px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 21px;
 }
 
