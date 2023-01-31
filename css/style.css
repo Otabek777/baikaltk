@@ -330,24 +330,17 @@ ul, ol {
   position: relative;
 }
 
-.map__wrap {
+.map__img {
+  width: 100%;
+}
+
+.map__city {
   position: absolute;
   top: 160px;
   left: 50.5%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-.map__wrap .new_chara {
-  position: absolute;
-  color: #FFFFFF;
-  top: 143px;
-  left: 465px;
-  font-weight: 600;
-  font-size: 21px;
-}
-
-.map__img {
-  width: 100%;
+  z-index: 2;
 }
 
 .form_message {
@@ -637,6 +630,9 @@ ul, ol {
 .map__mobile {
   display: none;
   background: #F8F8F8;
+}
+.map__mobile img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
